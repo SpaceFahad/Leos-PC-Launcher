@@ -1,0 +1,47 @@
+commands:
+
+  subserver:
+    allowed_roles:
+      - 1202393439631708221 #Role ID Here
+    file_path: C:\lnk\training-qa3.bat
+    allowed_channels:
+      - 1202393335176634489 #Channel ID Here
+    responses:
+      - message: "Launching Training Server..."
+        delay: 15
+      - message: "Training Server has been launched..."
+
+  mainserver:
+    allowed_roles:
+      - 1202393439631708221 #Role ID Here
+    file_path: C:\lnk\MOP-HC.lnk
+    allowed_channels:
+      - 1202393335176634489 #Channel ID Here
+    responses:
+      - message: "Launching MainOP Server..."
+        delay: 15
+      - message: "Launching HC1+HC2..."
+        delay: 25
+      - message: "MainOP Server and HCs has been launched..."
+
+  qa3:
+    allowed_roles:
+      - 1202393439631708221 #Role ID Here
+    file_path: C:\lnk\qa3.bat
+    allowed_channels:
+      - 1202393335176634489 #Channel ID Here
+    responses:
+      - message: "Stopped All Arma 3 Instances..."
+        delay: 3
+
+  ts3:
+    allowed_roles:
+      - 1202393439631708221 #Role ID Here
+    file_path: C:\lnk\ts3server.exe
+    allowed_channels:
+      - 1202393335176634489 #Channel ID Here #Channel ID Here
+    responses:
+      - message: "Starting Teamspeak 3 Server..."
+        delay: 3
+
+
