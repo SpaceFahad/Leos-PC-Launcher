@@ -16,7 +16,11 @@
   </p>
 </p>
 
-![Downloads](https://img.shields.io/github/downloads/SpaceFahad/Leos-PC-Launcher/total) ![Forks](https://img.shields.io/github/forks/SpaceFahad/Leos-PC-Launcher?style=social) ![Stargazers](https://img.shields.io/github/stars/SpaceFahad/Leos-PC-Launcher?style=social) ![Issues](https://img.shields.io/github/issues/SpaceFahad/Leos-PC-Launcher) ![License](https://img.shields.io/github/license/SpaceFahad/Leos-PC-Launcher) 
+[![SpaceFahad - Leos-PC-Launcher](https://img.shields.io/static/v1?label=SpaceFahad&message=Leos-PC-Launcher&color=blue&logo=github)](https://github.com/SpaceFahad/Leos-PC-Launcher "Go to GitHub repo")
+[![stars - Leos-PC-Launcher](https://img.shields.io/github/stars/SpaceFahad/Leos-PC-Launcher?style=social)](https://github.com/SpaceFahad/Leos-PC-Launcher)
+[![forks - Leos-PC-Launcher](https://img.shields.io/github/forks/SpaceFahad/Leos-PC-Launcher?style=social)](https://github.com/SpaceFahad/Leos-PC-Launcher)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
+[![issues - Leos-PC-Launcher](https://img.shields.io/github/issues/SpaceFahad/Leos-PC-Launcher)](https://github.com/SpaceFahad/Leos-PC-Launcher/issues)
 
 ## Table Of Contents
 
