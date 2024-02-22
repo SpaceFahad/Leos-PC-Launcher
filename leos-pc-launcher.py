@@ -107,10 +107,10 @@ async def run(interaction: discord.Interaction, command: Choice[str]):
 
         if stdout:
             embed.description = stdout.decode("utf-8")
-            await interaction.followup.send(embed=embed)
+            await interaction.followup.send(embed=embed, ephemeral=True)
         if stderr:
             embed.description = stderr.decode("utf-8")
-            await interaction.followup.send(embed=embed)
+            await interaction.followup.send(embed=embed, ephemeral=True)
     except Exception as e:
         embed.description = f"{interaction.user.mention} An error occurred: {e}"
         if interaction.response.is_done():
