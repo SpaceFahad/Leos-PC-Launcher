@@ -6,6 +6,7 @@ commands:
     file_path: C:\lnk\training-qa3.bat
     allowed_channels:
       - 1202393335176634489 #Channel ID Here
+    send_output: true  # Set to true to send stdout/stderr to Discord
     responses:
       - message: "Launching Training Server..."
         delay: 15
@@ -17,6 +18,7 @@ commands:
     file_path: C:\lnk\MOP-HC.lnk
     allowed_channels:
       - 1202393335176634489 #Channel ID Here
+    send_output: false  # Set to false to NOT send stdout/stderr to Discord
     responses:
       - message: "Launching MainOP Server..."
         delay: 15
@@ -30,6 +32,7 @@ commands:
     file_path: C:\lnk\qa3.bat
     allowed_channels:
       - 1202393335176634489 #Channel ID Here
+    send_output: false  # Set to true to send stdout/stderr to Discord
     responses:
       - message: "Stopped All Arma 3 Instances..."
         delay: 3
@@ -40,8 +43,7 @@ commands:
     file_path: C:\lnk\ts3server.exe
     allowed_channels:
       - 1202393335176634489 #Channel ID Here #Channel ID Here
+    send_output: true  # Set to true to send stdout/stderr to Discord
     responses:
       - message: "Starting Teamspeak 3 Server..."
         delay: 3
-
-

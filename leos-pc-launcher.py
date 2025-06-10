@@ -62,6 +62,7 @@ async def run(interaction: discord.Interaction, command: Choice[str]):
     allowed_roles = server_config["allowed_roles"]
     file_path = server_config["file_path"]
     allowed_channels = server_config["allowed_channels"]
+    send_output = server_config.get("send_output", True)  # Default to True if not specified
 
     if interaction.channel.id not in allowed_channels:
         embed.description = f"{interaction.user.mention} This command is not allowed in this channel!"
@@ -105,12 +106,14 @@ async def run(interaction: discord.Interaction, command: Choice[str]):
 
         stdout, stderr = await process.communicate()
 
-        if stdout:
-            embed.description = stdout.decode("utf-8")
-            await interaction.followup.send(embed=embed, ephemeral=True)
-        if stderr:
-            embed.description = stderr.decode("utf-8")
-            await interaction.followup.send(embed=embed, ephemeral=True)
+        # Only send output if send_output is True
+        if send_output:
+            if stdout:
+                embed.description = stdout.decode("utf-8")
+                await interaction.followup.send(embed=embed, ephemeral=True)
+            if stderr:
+                embed.description = stderr.decode("utf-8")
+                await interaction.followup.send(embed=embed, ephemeral=True)
     except Exception as e:
         embed.description = f"{interaction.user.mention} An error occurred: {e}"
         if interaction.response.is_done():
